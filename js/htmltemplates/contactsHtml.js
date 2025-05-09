@@ -40,11 +40,11 @@ function createContactsInfo(array) {
                    <div class="btnContainer" id="btnContainer"> 
                     <button id="edit-contact-btn" class="editBtn"
                         onclick="editContact('${array.id}', '${array.name}', '${array.email}', '${array.phone}', '${array.color}', '${array.type}')">
-                        <img src="/assets/img/contacts/edit.png" class="editIcon">Edit
+                        <img src="/join/assets/img/contacts/edit.png" class="editIcon">Edit
                     </button>
                     <button id="delete-contact-btn" class="deleteBtn"
                         onclick="showDeleteContactPopUp('${array.id}', '${array.name}', '${array.initials}', '${array.color}')">
-                        <img src="/assets/img/contacts/delete.png" class="deleteIcon">Delete
+                        <img src="/join/assets/img/contacts/delete.png" class="deleteIcon">Delete
                     </button>
                     </div>
                 </div>
@@ -106,17 +106,17 @@ function createEditContactPopUp() {
     <div class="formInputContainer">
         <input required autocomplete="off" id="editNameInput" class="formInput"
             placeholder="Name" type="text" value="" onkeyup="renderAddContactIcon()">
-        <img src="/assets/icon/person.png" alt="person" class="personIcon">
+        <img src="/join/assets/icon/person.png" alt="person" class="personIcon">
     </div>
     <div class="formInputContainer">
         <input required autocomplete="off" id="editEmailInput" class="formInput"
             placeholder="Email" type="email" value="">
-        <img src="/assets/icon/mail.png" alt="mail" class="mailIcon">
+        <img src="/join/assets/icon/mail.png" alt="mail" class="mailIcon">
     </div>
     <div class="formInputContainer">
         <input required autocomplete="off" id="editPhoneInput" class="formInput"
             placeholder="Phone" type="text" value="" oninput="this.value = this.value.replace(/[^0-9.]/g, '');">
-        <img src="/assets/img/contacts/call.png" alt="phone" class="phoneIcon">
+        <img src="/join/assets/img/contacts/call.png" alt="phone" class="phoneIcon">
     </div>
     <input type="text" value="" id="currentContactId" class="d-none">
     <div class="popUpBtnContainer">
@@ -125,9 +125,9 @@ function createEditContactPopUp() {
         <button type="button" id="BtnCancelEdit" class="popUpCancelBtn"
             onclick="hideEditContact()">Cancel</button>
         <button type="submit" id="btnSave" class="popUpBtn">Save <img
-                src="/assets/icon/check.png" alt=""></button>
+                src="/join/assets/icon/check.png" alt=""></button>
         <button type="submit" id="btnSaveMyContact" class="popUpBtn">Save <img
-                src="/assets/icon/check.png" alt=""></button>
+                src="/join/assets/icon/check.png" alt=""></button>
     </div>
 </form>`;
 }

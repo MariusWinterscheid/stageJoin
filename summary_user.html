@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOIN | Summary user</title>
 
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/summary.css">
-    <link rel="stylesheet" href="/style/summaryMobile.css">
-    <link rel="stylesheet" href="/style/fonts.css">
-    <link rel="stylesheet" href="/style/createMyContact.css">
-    <link rel="icon" href="/assets/img/join_logo.png">
+    <link rel="stylesheet" href="/join/style/style.css">
+    <link rel="stylesheet" href="/join/style/summary.css">
+    <link rel="stylesheet" href="/join/style/summaryMobile.css">
+    <link rel="stylesheet" href="/join/style/fonts.css">
+    <link rel="stylesheet" href="/join/style/createMyContact.css">
+    <link rel="icon" href="/join/assets/img/join_logo.png">
 </head>
 
 <body onload="loadSummaryUser()">
-    <div html-template="../templates/nav_template.html"></div>
+    <div html-template="/join/templates/nav_template.html"></div>
 
     <div class="sum-bg-main">
         <!-- summary board headline -->
         <div class="sum-header-main-div">
             <div class="summary-header">
                 <h2 class="board-h2">Join 360</h2>
-                <img class="sum-header-seperator-blueY" src="/assets/img/summary/seperatorBlueY.svg" alt="blue line">
+                <img class="sum-header-seperator-blueY" src="/join/assets/img/summary/seperatorBlueY.svg" alt="blue line">
                 <p>Key Metrics at a Glance</p>
             </div>
 
-            <img class="sum-header-seperator-blueX" src="/assets/img/summary/seperatorBlueX.svg" alt="blue line">
+            <img class="sum-header-seperator-blueX" src="/join/assets/img/summary/seperatorBlueX.svg" alt="blue line">
         </div>
 
         <!-- summary board content -->
@@ -56,13 +56,13 @@
                 <div onclick="window.location.href='board.html'" class="sum-cards-div-2">
                     <div class="sum-card-sec-row" id="urgentTaskContainer">
                         <div class="sum-card-sec-row-col1">
-                            <img src="../assets/img/summary/urgentMarkRedBack.svg" alt="two arrows upwoards">
+                            <img src="/join/assets/img/summary/urgentMarkRedBack.svg" alt="two arrows upwoards">
                             <div class="sum-card-sec-lay">
                                 <div class="board-h3" id="sumCardUrgentInt">0</div>
                                 <p>Urgent</p>
                             </div>
                         </div>
-                        <img src="/assets/img/summary/seperatorDark.svg" alt="dark seperator line">
+                        <img src="/join/assets/img/summary/seperatorDark.svg" alt="dark seperator line">
                         <div class="sum-card-sec-row-col2">
                             <div class="board-h4" id="deadlineDatum">No Urgent Tasks</div>
                             <p id="deadlineText">No Deadline</p>
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <!-- Tasks in Progress -->
-                    <div onclick="window.location.href='/templates/board.html'" class="sum-card-third-row">
+                    <div onclick="window.location.href='/join/templates/board.html'" class="sum-card-third-row">
                         <div class="sum-card-sec-lay">
                             <div class="board-h3" id="sumCardInProgressInt">0</div>
                             <p>Tasks in Progress</p>
@@ -246,11 +246,11 @@
         window.loadTasks = loadTasks;
     </script>
 
-    <script src="/js/htmltemplates/svgHtml.js"></script>
-    <script src="/js/script.js"></script>
-    <script src="/js/summaryUser.js"></script>
-    <script src="/js/addDummyDate.js"></script>
-    <script type="module" src="/js/guest.js"></script>
+    <script src="/join/js/htmltemplates/svgHtml.js"></script>
+    <script src="/join/js/script.js"></script>
+    <script src="/join/js/summaryUser.js"></script>
+    <script src="/join/js/addDummyDate.js"></script>
+    <script type="module" src="/join/js/guest.js"></script>
 </body>
 
 </html>

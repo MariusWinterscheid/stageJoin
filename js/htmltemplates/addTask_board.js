@@ -57,8 +57,8 @@ function createInputIcons() {
     let inputIcons = document.createElement('div');
     inputIcons.className = 'input-icons';
     inputIcons.innerHTML = `
-        <img src="/assets/img/contacts/delete.png" alt="Clear" class="delete-icon">
-        <img src="/assets/img/addTask/check_grey.png" alt="Check" class="check-icon" onclick="submitEdit(this)">
+        <img src="/join/assets/img/contacts/delete.png" alt="Clear" class="delete-icon">
+        <img src="/join/assets/img/addTask/check_grey.png" alt="Check" class="check-icon" onclick="submitEdit(this)">
     `;
     return inputIcons;
 }

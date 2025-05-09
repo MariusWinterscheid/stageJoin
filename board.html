@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOIN | Board</title>
 
-    <link rel="stylesheet" href="/style/fonts.css">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/board.css">
-    <link rel="stylesheet" href="/style/boardMediaQry.css">
-    <link rel="stylesheet" href="/style/summary.css">
-    <link rel="stylesheet" href="/style/summaryMobile.css">
-    <link rel="stylesheet" href="/style/taskSingleView.css">
-    <link rel="stylesheet" href="/style/board_addTask_main.css">
-    <link rel="stylesheet" href="/style/board_addTask.css">
-    <link rel="icon" href="/assets/img/join_logo.png">
+    <link rel="stylesheet" href="/join/style/fonts.css">
+    <link rel="stylesheet" href="/join/style/style.css">
+    <link rel="stylesheet" href="/join/style/board.css">
+    <link rel="stylesheet" href="/join/style/boardMediaQry.css">
+    <link rel="stylesheet" href="/join/style/summary.css">
+    <link rel="stylesheet" href="/join/style/summaryMobile.css">
+    <link rel="stylesheet" href="/join/style/taskSingleView.css">
+    <link rel="stylesheet" href="/join/style/board_addTask_main.css">
+    <link rel="stylesheet" href="/join/style/board_addTask.css">
+    <link rel="icon" href="/join/assets/img/join_logo.png">
 </head>
 
 <body onload="loadBoard()">
-    <div html-template="../templates/nav_template.html"></div>
+    <div html-template="/join/templates/nav_template.html"></div>
 
     <div id="taskBgDiv" onclick="if(event.target === this) hideTaskView()" class="task-bg-main"></div>
 
@@ -45,7 +45,7 @@
                 <div class="board-header-row1">
                     <div class="board-h2">Board</div>
                     <div class="board-mobile-btn-addTask" onclick="openAddTask('Todo')">
-                        <img src="/assets/symbols/add.svg" alt="plus symbol">
+                        <img src="/join/assets/symbols/add.svg" alt="plus symbol">
                     </div>
                 </div>
                 <div class="board-header-row2">
@@ -54,7 +54,7 @@
                             <input id="boardInputBox" type="text" placeholder="Find Task"
                                 onkeydown="boardSearchTasks()">
                             <div class="boardSearchbarRight">
-                                <img src="/assets/symbols/search.svg" alt="magnifying glass">
+                                <img src="/join/assets/symbols/search.svg" alt="magnifying glass">
                             </div>
 
                         </div>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="btn-board-add-task" onclick="openAddTask('Todo')">
                         <p>Add task</p>
-                        <img src="/assets/symbols/add.svg" alt="plus symbol">
+                        <img src="/join/assets/symbols/add.svg" alt="plus symbol">
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                     <div class="board-kanban-header">
                         <p>To do</p>
                         <img onclick="openAddTask('Todo')" class="board-kanban-add-btn"
-                            src="/assets/symbols/plus button mobile.svg" alt="plus symbol">
+                            src="/join/assets/symbols/plus button mobile.svg" alt="plus symbol">
                     </div>
                     <div id="boardCardsContainerTodo" class="board-cards-container">
                     </div>
@@ -84,7 +84,7 @@
                     <div class="board-kanban-header">
                         <p>In progress</p>
                         <img onclick="openAddTask('InProgress')" class="board-kanban-add-btn"
-                            src="/assets/symbols/plus button mobile.svg" alt="plus symbol">
+                            src="/join/assets/symbols/plus button mobile.svg" alt="plus symbol">
                     </div>
                     <div id="boardCardsContainerInProgress" class="board-cards-container">
                     </div>
@@ -95,7 +95,7 @@
                     <div class="board-kanban-header">
                         <p>Await feedback</p>
                         <img onclick="openAddTask('AwaitFeedback')" class="board-kanban-add-btn"
-                            src="/assets/symbols/plus button mobile.svg" alt="plus symbol">
+                            src="/join/assets/symbols/plus button mobile.svg" alt="plus symbol">
                     </div>
                     <div id="boardCardsContainerAwaitFeedback" class="board-cards-container">
                     </div>
@@ -119,7 +119,7 @@
                 <main>
                     <div class="form-btns">
                         <div class="close-addTask" onclick="closeAddTask()"><img
-                                src="/assets/img/contacts/close_grey.png" alt=""></div>
+                                src="/join/assets/img/contacts/close_grey.png" alt=""></div>
 
                         <div id="boardHeadAddTask" class="head-addTask">Add task</div>
 
@@ -137,7 +137,7 @@
                                         <div id="assigned-addTask">
                                             <div id="selectedCategory" class="assigned-addTask">Select Category <img
                                                     id="selectedCategoryIcon"
-                                                    src="/assets/symbols/arrow_drop_downaa.svg" alt="arrow down"></div>
+                                                    src="/join/assets/symbols/arrow_drop_downaa.svg" alt="arrow down"></div>
                                             <div id="optionsContainer">
                                                 <div id="selectedAbbreviations" class="selectedAbbreviations"></div>
                                                 <!-- Options will be added here dynamically -->
@@ -156,23 +156,23 @@
                                             <button type="button" id="urgent">
                                                 Urgent
                                                 <img id="prio-up-orange"
-                                                    src="/assets/img/addTask/Priority_symbols_up.png" alt="" />
+                                                    src="/join/assets/img/addTask/Priority_symbols_up.png" alt="" />
                                                 <img id="prio-up-white" class="d-none"
-                                                    src="/assets/img/addTask/Priority_symbols_up_white.png" alt="">
+                                                    src="/join/assets/img/addTask/Priority_symbols_up_white.png" alt="">
                                             </button>
                                             <button type="button" id="medium">
                                                 Medium
-                                                <img id="prio-medium-ye" src="/assets/img/addTask/Medium_yellow.png"
+                                                <img id="prio-medium-ye" src="/join/assets/img/addTask/Medium_yellow.png"
                                                     alt="" />
                                                 <img id="prio-medium-white" class="d-none"
-                                                    src="/assets/img/addTask/Medium_white.png" alt="">
+                                                    src="/join/assets/img/addTask/Medium_white.png" alt="">
                                             </button>
                                             <button type="button" id="low">
                                                 Low
                                                 <img id="prio-down-green"
-                                                    src="/assets/img/addTask/Priority_symbols_down.png" alt="" />
+                                                    src="/join/assets/img/addTask/Priority_symbols_down.png" alt="" />
                                                 <img id="prio-down-white" class="d-none"
-                                                    src="/assets/img/addTask/Priority_symbols_down_white.png" alt="">
+                                                    src="/join/assets/img/addTask/Priority_symbols_down_white.png" alt="">
                                             </button>
                                         </div>
                                         <label class="font-label-form-addTask">Category<span
@@ -190,7 +190,7 @@
                                             <div class="input-container">
                                                 <input type="text" id="input-title-addTasks"
                                                     placeholder="Add a subtask">
-                                                <img onclick="addSubtask()" src="/assets/img/addTask/plus.png" alt="Add"
+                                                <img onclick="addSubtask()" src="/join/assets/img/addTask/plus.png" alt="Add"
                                                     class="add-subtask-icon">
                                             </div>
 
@@ -208,16 +208,16 @@
                                                 onclick="clearInput()">Clear X</button>
                                             <button type="submit" id="saveTasks" class="btn-create-task-desktop">Create
                                                 Task
-                                                <img src="/assets/img/addTask/check.png" alt="" /></button>
+                                                <img src="/join/assets/img/addTask/check.png" alt="" /></button>
                                             <button onclick="pushEditTaskToDatabase()" type="button" id="submitEditTask"
                                                 class="btn-create-task-desktop" style="display: none;">Ok
-                                                <img src="/assets/img/addTask/check.png" alt="" /></button>
+                                                <img src="/join/assets/img/addTask/check.png" alt="" /></button>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div id="added-to-board" class="added-to-board d-none">
-                                    <span>Task added to board</span><img src="/assets/img/addTask/added_to_board.png"
+                                    <span>Task added to board</span><img src="/join/assets/img/addTask/added_to_board.png"
                                         alt="" />
                                 </div>
 
@@ -327,18 +327,18 @@
     </script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
-    <script src="/js/htmltemplates/svgHtml.js"></script>
-    <script src="/js/htmltemplates/boardHtml.js"></script>
-    <script src="/js/script.js"></script>
-    <script src="/js/addTask_board.js"></script>
-    <script src="/js/addTask_board_main.js"></script>
-    <script src="/js/editTask_board.js"></script>
-    <script src="/js/board.js"></script>
-    <script src="/js/boardDragDrop.js"></script>
-    <script src="/js/boardTaskSingleView.js"></script>
-    <script src="/js/htmltemplates/addTask_board.js"></script>
-    <script src="/js/addDummyDate.js"></script>
-    <script type="module" src="/js/guest.js"></script>
+    <script src="/join/js/htmltemplates/svgHtml.js"></script>
+    <script src="/join/js/htmltemplates/boardHtml.js"></script>
+    <script src="/join/js/script.js"></script>
+    <script src="/join/js/addTask_board.js"></script>
+    <script src="/join/js/addTask_board_main.js"></script>
+    <script src="/join/js/editTask_board.js"></script>
+    <script src="/join/js/board.js"></script>
+    <script src="/join/js/boardDragDrop.js"></script>
+    <script src="/join/js/boardTaskSingleView.js"></script>
+    <script src="/join/js/htmltemplates/addTask_board.js"></script>
+    <script src="/join/js/addDummyDate.js"></script>
+    <script type="module" src="/join/js/guest.js"></script>
 </body>
 
 </html>

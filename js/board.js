@@ -143,11 +143,11 @@ function returnConfigBoardCardHtml(task) {
  */
 function returnBoardCardPrio(task) {
   if (task.priority == "urgent") {
-    return "/assets/symbols/Prio alta.svg";
+    return "/join/assets/symbols/Prio alta.svg";
   } else if (task.priority == "medium") {
-    return "/assets/symbols/Prio media.svg";
+    return "/join/assets/symbols/Prio media.svg";
   } else if (task.priority == "low") {
-    return "/assets/symbols/Prio baja.svg";
+    return "/join/assets/symbols/Prio baja.svg";
   }
 }
 

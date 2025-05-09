@@ -132,12 +132,12 @@
 
 .task-description::-webkit-scrollbar-button:vertical:start:decrement {
   display: block;
-  background-image: url("../assets/icon/vectorUp.png");
+  background-image: url("/join/assets/icon/vectorUp.png");
 }
 
 .task-description::-webkit-scrollbar-button:vertical🔚decrement {
   display: block;
-  background-image: url("../assets/icon/vectorDown.png");
+  background-image: url("/join/assets/icon/vectorDown.png");
 }
 
 .task-due-prio-line {

@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOIN | Log in</title>
 
-    <link rel="stylesheet" href="/style/log_in.css">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/fonts.css">
-    <link rel="icon" href="/assets/img/join_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/join/style/log_in.css">
+    <link rel="stylesheet" href="/join/style/style.css">
+    <link rel="stylesheet" href="/join/style/fonts.css">
+    <link rel="icon" href="/join/assets/img/join_logo.png" type="image/x-icon">
 </head>
 
 <body onload="loadStartScreen()">
     <div class="startScreenContainer" id="startScreenContainer"></div>
-    <img id="startScreenLogo" class="startScreenLogo d-none" src="/assets/img/join_mobil_logo.png" alt="Join Mobil Logo">
-    <img id="startScreenLogoFixed" class="startScreenLogoFixed" src="/assets/img/join_logo.png" alt="Join Mobil Logo">
+    <img id="startScreenLogo" class="startScreenLogo d-none" src="/join/assets/img/join_mobil_logo.png" alt="Join Mobil Logo">
+    <img id="startScreenLogoFixed" class="startScreenLogoFixed" src="/join/assets/img/join_logo.png" alt="Join Mobil Logo">
 
     <div id="signUpContainer" class="signUpContainer">
         <div class="signUpContent">
@@ -32,7 +32,7 @@
                 <form id="logInForm" onkeyup="renderLogInBtn(); logInIsCorrected()">
                     <div class="formInputContainer">
                         <input required autocapitalize="off" type="email" placeholder="Email" id="logInMailInput" class="formInput">
-                        <img src="/assets/icon/mail.png" alt="mail" class="mailIcon">
+                        <img src="/join/assets/icon/mail.png" alt="mail" class="mailIcon">
                     </div>
                     <div class="formInputContainer">
                         <input required autocomplete="off" onkeyup="changePasswordIcon()" type="password" placeholder="Password"
@@ -56,12 +56,12 @@
     </div>
 
     <footer>
-        <a href="privacy_policy.html" target="_blank">Privacy Policy</a>
-        <a href="legal_notice.html" target="_blank">Legal Notice</a>
+        <a href="/join/privacy_policy.html" target="_blank">Privacy Policy</a>
+        <a href="/join/legal_notice.html" target="_blank">Legal Notice</a>
     </footer>
 
-    <script src="/js/logIn.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="/join/js/logIn.js"></script>
+    <script src="/join/js/script.js"></script>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";

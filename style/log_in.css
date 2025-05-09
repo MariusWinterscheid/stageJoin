@@ -257,7 +257,7 @@ form {
     border: none;
     width: 24px;
     height: 24px;
-    background: url(/assets/icon/unchecked.png) no-repeat;
+    background: url(/join/assets/icon/unchecked.png) no-repeat;
     background-position: center center;
     background-size: 16px;
 }
@@ -266,7 +266,7 @@ form {
     border: none;
     width: 24px;
     height: 24px;
-    background: url(/assets/icon/checked.png) no-repeat;
+    background: url(/join/assets/icon/checked.png) no-repeat;
     background-position: center center;
     background-size: 20px;
 }

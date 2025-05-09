@@ -2,13 +2,13 @@ let dummyContacts;
 let dummyTasks;
 
 async function loadDummyContactJson() {
-    let src = '../json/dummyContacts.json';
+    let src = '/join/json/dummyContacts.json';
     let response = await fetch(src);
     dummyContacts = await response.json();
 }
 
 async function loadDummyTasksJson() {
-    let src = '../json/dummyTasks.json';
+    let src = '/join/json/dummyTasks.json';
     let response = await fetch(src);
     dummyTasks = await response.json();
 }

@@ -15,12 +15,12 @@ let signUpContainer = document.getElementById('signUpContainer');
 function changePasswordIcon() {
     let passwordIcon = document.getElementById('passwordIcon');
     if (signUpPasswordInput.value <= 0) {
-        passwordIcon.src = '/assets/icon/lock.png';
+        passwordIcon.src = '/join/assets/icon/lock.png';
         passwordIcon.classList.remove('noVisibilityIcon');
         passwordIcon.classList.remove('visibilityIcon');
         passwordIcon.classList.add('img_diabled');
     } else {
-        passwordIcon.src = '/assets/icon/visibility_off.png';
+        passwordIcon.src = '/join/assets/icon/visibility_off.png';
         passwordIcon.classList.add('noVisibilityIcon');
         passwordIcon.classList.remove('img_diabled');
     }
@@ -29,12 +29,12 @@ function changePasswordIcon() {
 function changeConfirmPasswordIcon() {
     let confirmPasswordIcon = document.getElementById('confirmPasswordIcon');
     if (signUpConfirmPasswordInput.value <= 0) {
-        confirmPasswordIcon.src = '/assets/icon/lock.png';
+        confirmPasswordIcon.src = '/join/assets/icon/lock.png';
         confirmPasswordIcon.classList.remove('noVisibilityIcon');
         confirmPasswordIcon.classList.remove('visibilityIcon');
         confirmPasswordIcon.classList.add('img_diabled');
     } else {
-        confirmPasswordIcon.src = '/assets/icon/visibility_off.png';
+        confirmPasswordIcon.src = '/join/assets/icon/visibility_off.png';
         confirmPasswordIcon.classList.add('noVisibilityIcon');
         confirmPasswordIcon.classList.remove('img_diabled');
     }
@@ -44,11 +44,11 @@ function showPassword() {
     let passwordIcon = document.getElementById('passwordIcon');
     if (signUpPasswordInput.type === "password") {
         signUpPasswordInput.type = "text";
-        passwordIcon.src = '/assets/icon/visibility.png';
+        passwordIcon.src = '/join/assets/icon/visibility.png';
         passwordIcon.classList.add('visibilityIcon');
     } else {
         signUpPasswordInput.type = "password";
-        passwordIcon.src = '/assets/icon/visibility_off.png';
+        passwordIcon.src = '/join/assets/icon/visibility_off.png';
         passwordIcon.classList.remove('visibilityIcon');
     }
 }
@@ -57,11 +57,11 @@ function showConfirmPassword() {
     let confirmPasswordIcon = document.getElementById('confirmPasswordIcon');
     if (signUpConfirmPasswordInput.type === "password") {
         signUpConfirmPasswordInput.type = "text";
-        confirmPasswordIcon.src = '/assets/icon/visibility.png';
+        confirmPasswordIcon.src = '/join/assets/icon/visibility.png';
         confirmPasswordIcon.classList.add('visibilityIcon');
     } else {
         signUpConfirmPasswordInput.type = "password";
-        confirmPasswordIcon.src = '/assets/icon/visibility_off.png';
+        confirmPasswordIcon.src = '/join/assets/icon/visibility_off.png';
         confirmPasswordIcon.classList.remove('visibilityIcon');
     }
 }

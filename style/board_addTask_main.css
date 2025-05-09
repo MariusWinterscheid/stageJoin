@@ -13,7 +13,7 @@
   position: absolute;
   right: 12px;
   top: 20px;
-  content: url("/assets/symbols/arrow_drop_downaa.svg");
+  content: url("/join/assets/symbols/arrow_drop_downaa.svg");
 }
 .board-addTask-main-bg select{
   -moz-appearance: none;

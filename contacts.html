@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOIN | Contacts</title>
-    <link rel="stylesheet" href="/style/fonts.css">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/contacts.css">
-    <link rel="stylesheet" href="/style/contactsMobile.css">
-    <link rel="stylesheet" href="/style/createMyContact.css">
-    <link rel="icon" href="/assets/img/join_logo.png">
+    <link rel="stylesheet" href="/join/style/fonts.css">
+    <link rel="stylesheet" href="/join/style/style.css">
+    <link rel="stylesheet" href="/join/style/contacts.css">
+    <link rel="stylesheet" href="/join/style/contactsMobile.css">
+    <link rel="stylesheet" href="/join/style/createMyContact.css">
+    <link rel="icon" href="/join/assets/img/join_logo.png">
 </head>
 
 <body onload="loadContact()">
-    <div html-template="/templates/nav_template.html"></div>
+    <div html-template="/join/templates/nav_template.html"></div>
 
     <div class="mainContact">
         <div id="contactListContainer" class="contactListContainer">
             <button id="newContactDesktopBtn" onclick="openAddContacts()" class="newContactDesktopBtn">
-                <div class="newContactDesktopBtnContainer">Add new contact <img src="/assets/icon/person_add.png"
+                <div class="newContactDesktopBtnContainer">Add new contact <img src="/join/assets/icon/person_add.png"
                         class="newContactDesktopIcon"></div>
             </button>
             <div id="myContactContainer" class="myContactContainer"></div>
@@ -40,21 +40,21 @@
         </div>
         <div id="showContactBackContainer" class="showContactBackContainer">
             <img class="showContainerBackIcon" onclick="hideShowContactInfo()"
-                src="/assets/img/contacts/back-arrow.png">
+                src="/join/assets/img/contacts/back-arrow.png">
         </div>
-        <div id="newContactMobilBtn" class="newContactMobilBtn" onclick="openAddContacts()" ><img class="newContactMobilIcon" src="/assets/img/contacts/person_add.png">
+        <div id="newContactMobilBtn" class="newContactMobilBtn" onclick="openAddContacts()" ><img class="newContactMobilIcon" src="/join/assets/img/contacts/person_add.png">
         </div>
-        <div id="newContactInfoMobilBtn" class="newContactMobilBtn d-none" onclick="showEditMobilBtn()" ><img class="editContactMobilIcon" src="/assets/img/contacts/more_vert.png">
+        <div id="newContactInfoMobilBtn" class="newContactMobilBtn d-none" onclick="showEditMobilBtn()" ><img class="editContactMobilIcon" src="/join/assets/img/contacts/more_vert.png">
         </div>
     </div>
 
     <div id="newContactContainer" class="popUpContainer d-none" onclick="hideAddContact()">
         <div id="newContact" class="popUp" onclick="stopPropagation(event)">
             <div class="popUpCloseMobilContainer">
-                <img class="popUpCloseMobil" src="/assets/img/contacts/close.png" onclick="hideAddContact()">
+                <img class="popUpCloseMobil" src="/join/assets/img/contacts/close.png" onclick="hideAddContact()">
             </div>
             <div class="popUpHeader">
-                <img src="/assets/img/join_mobil_logo.png" class="popUpLogo">
+                <img src="/join/assets/img/join_mobil_logo.png" class="popUpLogo">
                 <div class="popUpHeadline">Add contact</div>
                 <div class="popUpText">Tasks are better with a team!</div>
                 <div class="popUpDistacer"></div>
@@ -71,26 +71,26 @@
                     <div class="formInputContainer">
                         <input required autocomplete="off" id="inputName" class="formInput" placeholder="Name"
                             type="text" onkeyup="renderAddContactIcon()">
-                        <img src="/assets/icon/person.png" alt="person" class="personIcon">
+                        <img src="/join/assets/icon/person.png" alt="person" class="personIcon">
                     </div>
                     <div class="formInputContainer">
                         <input required autocomplete="off" id="inputEmail" class="formInput" placeholder="Email"
                             type="email">
-                        <img src="/assets/icon/mail.png" alt="mail" class="mailIcon">
+                        <img src="/join/assets/icon/mail.png" alt="mail" class="mailIcon">
                     </div>
                     <div class="formInputContainer">
                         <input required autocomplete="off" id="inputPhone" class="formInput" placeholder="Phone"
                             type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '');">
-                        <img src="/assets/img/contacts/call.png" alt="phone" class="phoneIcon">
+                        <img src="/join/assets/img/contacts/call.png" alt="phone" class="phoneIcon">
                     </div>
                     <div class="popUpBtnContainer">
                         <button id="btnCancel" class="popUpCancelBtn" onclick="hideAddContact()">Cancel X</button>
                         <button type="submit" id="btnCreate" class="popUpBtn">Create Contact <img
-                                src="/assets/icon/check.png" alt=""></button>
+                                src="/join/assets/icon/check.png" alt=""></button>
                     </div>
                 </form>
                 <div class="popUpCloseContainer">
-                    <img class="popUpClose" src="/assets/img/contacts/close_grey.png" onclick="hideAddContact()">
+                    <img class="popUpClose" src="/join/assets/img/contacts/close_grey.png" onclick="hideAddContact()">
                 </div>
             </div>
         </div>
@@ -99,7 +99,7 @@
     <div id="editContactContainer" class="popUpContainer d-none" onclick="closeEditOrDeletePopUp()">
         <div id="editContactPopUp" class="popUp" onclick="stopPropagation(event)">
             <div class="popUpCloseMobilContainer">
-                <img class="popUpCloseMobil" src="/assets/img/contacts/close.png" onclick="closeEditOrDeletePopUp()">
+                <img class="popUpCloseMobil" src="/join/assets/img/contacts/close.png" onclick="closeEditOrDeletePopUp()">
             </div>
             <div class="popUpHeader">
                 <div id="popUpHeadline" class="popUpHeadline">Edit contact</div>
@@ -116,7 +116,7 @@
 
                 </div>
                 <div class="popUpCloseContainer">
-                    <img class="popUpClose" src="/assets/img/contacts/close_grey.png" onclick="hideEditContact()">
+                    <img class="popUpClose" src="/join/assets/img/contacts/close_grey.png" onclick="hideEditContact()">
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@
     <div id="deleteContactContainer" class="popUpContainer d-none" onclick="hideDeleteContact()">
         <div id="deleteContact" class="popUp" onclick="stopPropagation(event)">
             <div class="popUpCloseMobilContainer">
-                <img class="popUpCloseMobil" src="/assets/img/contacts/close.png" onclick="hideDeleteContact()">
+                <img class="popUpCloseMobil" src="/join/assets/img/contacts/close.png" onclick="hideDeleteContact()">
             </div>
             <div class="popUpHeader">
                 <div class="popUpHeadline">Delete contact</div>
@@ -146,11 +146,11 @@
                         <button type="button" id="btnDeleteCancel" class="popUpCancelBtn"
                             onclick="hideDeleteContact()">Cancel</button>
                         <button type="button" id="btnDel" class="popUpBtn" onclick="startDeleteContactDirekt()">Delete<img
-                                src="/assets/icon/check.png" alt=""></button>
+                                src="/join/assets/icon/check.png" alt=""></button>
                     </div>
                 </div>
                 <div class="popUpCloseContainer">
-                    <img class="popUpClose" src="/assets/img/contacts/close_grey.png"
+                    <img class="popUpClose" src="/join/assets/img/contacts/close_grey.png"
                         onclick="hideDeleteContact()">
                 </div>
             </div>
@@ -163,12 +163,12 @@
 
     </div>
     </main>
-    <script src="/js/contacts.js"></script>
-    <script src="/js/script.js"></script>
-    <script src="/js/htmltemplates/contactsHtml.js"></script>
-    <script src="/js/contacts_event.js"></script>
-    <script src="/js/addDummyDate.js"></script>
-    <script type="module" src="/js/guest.js"></script>
+    <script src="/join/js/contacts.js"></script>
+    <script src="/join/js/script.js"></script>
+    <script src="/join/js/htmltemplates/contactsHtml.js"></script>
+    <script src="/join/js/contacts_event.js"></script>
+    <script src="/join/js/addDummyDate.js"></script>
+    <script type="module" src="/join/js/guest.js"></script>
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
         import { getFirestore } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";

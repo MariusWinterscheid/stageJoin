@@ -106,7 +106,7 @@ function returnHtmlBoardTaskSingleView(task, taskConfig) {
       <div class="task-content-main-div">
       <div class="task-main-header">
           <div class="task-label-div ${taskConfig.catBg}">${task.category}</div>
-          <img onclick="hideTaskView()" id="task-x-btn" src="/assets/symbols/close.svg" alt="x">
+          <img onclick="hideTaskView()" id="task-x-btn" src="/join/assets/symbols/close.svg" alt="x">
       </div>
       <span class="task-headline">${task.header}</span>
       <span class="task-description">${task.description}</span>
@@ -136,11 +136,11 @@ function returnHtmlBoardTaskSingleView(task, taskConfig) {
       <div class="task-main-footer">
           <div class="task-footer">
               <div id="taskFooterDel" class="task-footer-del-edit" onclick="deleteTask('${task.taskId}')">
-                <img id="deleteIcon" src="/assets/symbols/delete.svg" alt="trash can">
+                <img id="deleteIcon" src="/join/assets/symbols/delete.svg" alt="trash can">
                 Delete
               </div>
               <div onclick="initEditTask('${task.taskId}', event)" id="taskFooterEdit" class="task-footer-del-edit">
-                <img id="editIcon" src="/assets/symbols/edit.svg" alt="trash can">
+                <img id="editIcon" src="/join/assets/symbols/edit.svg" alt="trash can">
                 Edit
               </div>
           </div>

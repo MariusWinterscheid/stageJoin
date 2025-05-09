@@ -59,12 +59,12 @@ body {
 
 .contactListContainer::-webkit-scrollbar-button:vertical:start:decrement {
   display: block;
-  background-image: url('../assets/icon/vectorUp.png');
+  background-image: url('/join/assets/icon/vectorUp.png');
 }
 
 .contactListContainer::-webkit-scrollbar-button:vertical:end:decrement {
   display: block;
-  background-image: url('../assets/icon/vectorDown.png');
+  background-image: url('/join/assets/icon/vectorDown.png');
 }
 
 .newContactDesktopBtn {
@@ -361,7 +361,7 @@ body {
 }
 
 .editBtn:hover .editIcon {
-  content: url('/assets/img/contacts/edit_blue.png');
+  content: url('/join/assets/img/contacts/edit_blue.png');
 }
 
 .editIcon {
@@ -392,7 +392,7 @@ body {
 }
 
 .deleteBtn:hover .deleteIcon {
-  content: url('/assets/img/contacts/delete_blue.png');
+  content: url('/join/assets/img/contacts/delete_blue.png');
 }
 
 .deleteIcon {

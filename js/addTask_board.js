@@ -51,8 +51,8 @@ function createSubtaskElement(subtask) {
   li.innerHTML = `
         <span class="subtask-text">• ${subtask}</span>
         <div class="subtask-icons">
-            <img src="/assets/img/contacts/edit.png" alt="Bearbeiten" class="edit-icon">
-            <img src="/assets/img/contacts/delete.png" alt="Löschen" class="delete-icon">
+            <img src="/join/assets/img/contacts/edit.png" alt="Bearbeiten" class="edit-icon">
+            <img src="/join/assets/img/contacts/delete.png" alt="Löschen" class="delete-icon">
         </div>
     `;
   return li;
@@ -122,8 +122,8 @@ function createInputIcons() {
   let inputIcons = document.createElement("div");
   inputIcons.className = "input-icons";
   inputIcons.innerHTML = `
-    <img src="/assets/img/contacts/delete.png" alt="Clear" class="delete-icon">
-    <img src="/assets/img/addTask/check_grey.png" alt="Check" class="check-icon" onclick="submitEdit(this)">
+    <img src="/join/assets/img/contacts/delete.png" alt="Clear" class="delete-icon">
+    <img src="/join/assets/img/addTask/check_grey.png" alt="Check" class="check-icon" onclick="submitEdit(this)">
   `;
   return inputIcons;
 }
@@ -405,8 +405,8 @@ function createSubtaskElement(subtask, subtaskId) {
   li.innerHTML = `
         <span class="subtask-text">• ${subtask}</span>
         <div class="subtask-icons">
-            <img src="/assets/img/contacts/edit.png" alt="Bearbeiten" class="edit-icon">
-            <img src="/assets/img/contacts/delete.png" alt="Löschen" class="delete-icon">
+            <img src="/join/assets/img/contacts/edit.png" alt="Bearbeiten" class="edit-icon">
+            <img src="/join/assets/img/contacts/delete.png" alt="Löschen" class="delete-icon">
         </div>
     `;
   return li;

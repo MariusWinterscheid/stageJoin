@@ -50,7 +50,7 @@ function showTaskView(id) {
       for (i = 0; i < task.subtasks.length; i++) {
         const subtask = task.subtasks[i];
         if (!subtask.done) {
-          subtasksConfig.svgSrc = "/assets/symbols/Property 1=Default.svg";
+          subtasksConfig.svgSrc = "/join/assets/symbols/Property 1=Default.svg";
         }
         document.getElementById("boardTaskSingleSubtasks").innerHTML +=
           returnHtmlBoardSubtask(subtask, subtasksConfig, i);
@@ -70,7 +70,7 @@ function showTaskView(id) {
   function returnBoardSubtaskConfig(task) {
     let subtasksConfig = {
       amount: task.subtasks.length - 1,
-      svgSrc: "/assets/symbols/Property 1=checked.svg",
+      svgSrc: "/join/assets/symbols/Property 1=checked.svg",
       parentTaskId: task.taskId,
     };
     return subtasksConfig;
@@ -90,8 +90,8 @@ function showTaskView(id) {
     let subtask = task.subtasks[id];
     subtask.done = !subtask.done;
     document.getElementById(`taskSubtask${id}`).src = subtask.done
-      ? "/assets/symbols/Property 1=checked.svg"
-      : "/assets/symbols/Property 1=Default.svg";
+      ? "/join/assets/symbols/Property 1=checked.svg"
+      : "/join/assets/symbols/Property 1=Default.svg";
   
     let changedTask = boardGetTaskById(parentId);
   
@@ -124,22 +124,22 @@ function showTaskView(id) {
     const deleteIcon = document.getElementById("deleteIcon");
   
     deleteDiv.addEventListener("mouseenter", () => {
-      deleteIcon.src = "/assets/symbols/deleteHover.svg";
+      deleteIcon.src = "/join/assets/symbols/deleteHover.svg";
     });
   
     deleteDiv.addEventListener("mouseleave", () => {
-      deleteIcon.src = "/assets/symbols/delete.svg";
+      deleteIcon.src = "/join/assets/symbols/delete.svg";
     });
   
     const editDiv = document.getElementById("taskFooterEdit");
     const editIcon = document.getElementById("editIcon");
   
     editDiv.addEventListener("mouseenter", () => {
-      editIcon.src = "/assets/symbols/editHover.svg";
+      editIcon.src = "/join/assets/symbols/editHover.svg";
     });
   
     editDiv.addEventListener("mouseleave", () => {
-      editIcon.src = "/assets/symbols/edit.svg";
+      editIcon.src = "/join/assets/symbols/edit.svg";
     });
   }
   
@@ -152,10 +152,10 @@ function showTaskView(id) {
   
     buttons.forEach((button) => {
       button.addEventListener("mouseenter", () => {
-        button.src = "/assets/symbols/plus button mobile hover.svg";
+        button.src = "/join/assets/symbols/plus button mobile hover.svg";
       });
       button.addEventListener("mouseleave", () => {
-        button.src = "/assets/symbols/plus button mobile.svg";
+        button.src = "/join/assets/symbols/plus button mobile.svg";
       });
     });
   }

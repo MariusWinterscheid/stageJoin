@@ -233,7 +233,7 @@ function removeAnimation() {
 function createMyContactsPopUp() {
   return `<div id="createMyContact" class="popUp slideInBottom">
   <div class="popUpHeader">
-      <img src="/assets/img/join_mobil_logo.png" class="popUpLogo">
+      <img src="/join/assets/img/join_mobil_logo.png" class="popUpLogo">
       <div class="popUpHeadline">Welcome</div>
       <div class="popUpText">Please create your Contact!</div>
       <div class="popUpDistacer"></div>
@@ -248,18 +248,18 @@ function createMyContactsPopUp() {
 <form id="createMyContactForm" class="popUpForm" onsubmit="startCreateMyContact(); return false;" onkeyup="renderCreateMyContactBtn()">
   <div class="formInputContainer">
       <input required type="text" placeholder="Name" id="createMyContactNameInput" class="formInput" value="${userInfo.name}" onkeyup="createMyContactInitials()">
-      <img src="/assets/icon/person.png" alt="person" class="personIcon">
+      <img src="/join/assets/icon/person.png" alt="person" class="personIcon">
   </div>
   <div class="formInputContainer">
       <input required type="email" placeholder="Email" id="createMyContactEmailInput" class="formInput" value="${userInfo.email}">
-      <img src="/assets/icon/mail.png" alt="mail" class="mailIcon">
+      <img src="/join/assets/icon/mail.png" alt="mail" class="mailIcon">
   </div>
   <div class="formInputContainer">
       <input required type="text" placeholder="Phone" id="createMyContactPhoneInput" class="formInput" oninput="this.value = this.value.replace(/[^0-9.]/g, '');">
-      <img src="/assets/img/contacts/call.png" alt="phone" class="phoneIcon">
+      <img src="/join/assets/img/contacts/call.png" alt="phone" class="phoneIcon">
   </div>
   <div class="popUpBtnContainer">
-    <button id="createMyContactBtn" class="popUpBtn" type="submit">Create contact<img src="/assets/img/addTask/check.png"></button>                     
+    <button id="createMyContactBtn" class="popUpBtn" type="submit">Create contact<img src="/join/assets/img/addTask/check.png"></button>                     
   </div>
 </form>
   </div>

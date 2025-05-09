@@ -44,7 +44,7 @@ function slideToCorner() {
 }
 
 function changeLogo() {
-    document.getElementById('startScreenLogo').src = '/assets/img/join_logo.png';
+    document.getElementById('startScreenLogo').src = '/join/assets/img/join_logo.png';
 }
 
 let logInMailInput = document.getElementById('logInMailInput');
@@ -67,12 +67,12 @@ function logInIsCorrected() {
 function changePasswordIcon() {
     let passwordIcon = document.getElementById('passwordIcon');
     if (logInPasswordInput.value <= 0) {
-        passwordIcon.src = '/assets/icon/lock.png';
+        passwordIcon.src = '/join/assets/icon/lock.png';
         passwordIcon.classList.remove('noVisibilityIcon');
         passwordIcon.classList.remove('visibilityIcon');
         passwordIcon.classList.add('img_diabled');
     } else {
-        passwordIcon.src = '/assets/icon/visibility_off.png';
+        passwordIcon.src = '/join/assets/icon/visibility_off.png';
         passwordIcon.classList.add('noVisibilityIcon');
         passwordIcon.classList.remove('img_diabled');
     }
@@ -82,11 +82,11 @@ function showPassword() {
     let passwordIcon = document.getElementById('passwordIcon');
     if (logInPasswordInput.type === "password") {
         logInPasswordInput.type = "text";
-        passwordIcon.src = '/assets/icon/visibility.png';
+        passwordIcon.src = '/join/assets/icon/visibility.png';
         passwordIcon.classList.add('visibilityIcon');
     } else {
         logInPasswordInput.type = "password";
-        passwordIcon.src = '/assets/icon/visibility_off.png';
+        passwordIcon.src = '/join/assets/icon/visibility_off.png';
         passwordIcon.classList.remove('visibilityIcon');
     }
 }

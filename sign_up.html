@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOIN | Sign up</title>
 
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/sign_up.css">
-    <link rel="stylesheet" href="/style/fonts.css">
-    <link rel="icon" href="assets/img/join_logo.png">
+    <link rel="stylesheet" href="/join/style/style.css">
+    <link rel="stylesheet" href="/join/style/sign_up.css">
+    <link rel="stylesheet" href="/join/style/fonts.css">
+    <link rel="icon" href="/join/assets/img/join_logo.png">
 </head>
 
 <body onload="loadSignUp()">
-    <img class="signUpLogo" id="signUpLogo" src="/assets/img/join_logo.png" alt="Join Mobil Logo">
+    <img class="signUpLogo" id="signUpLogo" src="/join/assets/img/join_logo.png" alt="Join Mobil Logo">
 
     <div id="signUpContainer">
         <div class="signUpContent">
             <div class="headlineContainer">
                 <a href="log_in.html">
-                <img src="/assets/icon/back.png" class="signUpBackIcon"
+                <img src="/join/assets/icon/back.png" class="signUpBackIcon"
                     alt="back"></a>
                 <div class="headline">Sign up</div>
             </div>
@@ -28,11 +28,11 @@
                 <form id="signUpForm" onkeyup="renderSignUpBtn(); passwordIsCorrected()" onchange="renderSignUpBtn()">
                     <div class="formInputContainer">
                         <input required autocomplete="off" type="text" placeholder="Name" id="signUpNameInput" class="formInput">
-                        <img src="/assets/icon/person.png" alt="person" class="personIcon">
+                        <img src="/join/assets/icon/person.png" alt="person" class="personIcon">
                     </div>
                     <div class="formInputContainer">
                         <input required autocomplete="off" type="email" placeholder="Email" id="signUpMailInput" class="formInput">
-                        <img src="/assets/icon/mail.png" alt="mail" class="mailIcon">
+                        <img src="/join/assets/icon/mail.png" alt="mail" class="mailIcon">
                     </div>
                     <div class="formInputContainer">
                         <input required autocomplete="off" onkeyup="changePasswordIcon()" type="password" placeholder="Password"
@@ -50,7 +50,7 @@
                     </div>
                     <div class="formCheckboxContainer">
                         <input required type="checkbox" name="Remember me" id="signUpCheckBox" class="formCheckbox">
-                        <label class="signUpCheckBoxLabel">I accept the <a href="privacy_policy.html"
+                        <label class="signUpCheckBoxLabel">I accept the <a href="/join/privacy_policy.html"
                                 target="_blank">Privacy Policy</a></label>
                     </div>
                     <button type="submit" class="signUpBtn" id="signUpBtn" disabled>Sign up</button>
@@ -64,12 +64,12 @@
     </div>
 
     <footer>
-        <a href="privacy_policy.html" target="_blank">Privacy Policy</a>
-        <a href="legal_notice.html" target="_blank">Legal Notice</a>
+        <a href="/join/privacy_policy.html" target="_blank">Privacy Policy</a>
+        <a href="/join/legal_notice.html" target="_blank">Legal Notice</a>
     </footer>
 
-    <script src="/js/script.js"></script>
-    <script src="/js/signUp.js"></script>
+    <script src="/join/js/script.js"></script>
+    <script src="/join/js/signUp.js"></script>
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
         import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
